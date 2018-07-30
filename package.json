@@ -1,0 +1,19 @@
+{
+  "name": "com.xiao.GaoDeLocation",
+  "version": "1.0.0",
+  "description": "ben xiao",
+  "cordova": {
+    "id": "com.xiao.GaoDeLocation",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "ben xiao",
+  "license": "ISC"
+}
