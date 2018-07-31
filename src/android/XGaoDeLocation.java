@@ -34,6 +34,7 @@ public class XGaoDeLocation extends CordovaPlugin  implements AMapLocationListen
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        callback = callbackContext;
         if (action.equals("coolMethod")) {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
@@ -44,6 +45,8 @@ public class XGaoDeLocation extends CordovaPlugin  implements AMapLocationListen
             locationOption = new AMapLocationClientOption();
             // 设置定位模式为高精度模式
             locationOption.setLocationMode(AMapLocationMode.Hight_Accuracy);
+            // 关闭缓存机制
+            locationOption.setLocationCacheEnable(false);
             //设置为单次定位
             locationOption.setOnceLocation(true);
             // 设置定位监听
@@ -78,12 +81,14 @@ public class XGaoDeLocation extends CordovaPlugin  implements AMapLocationListen
                 JSONObject locationInfo = new JSONObject();
                 try {
                     locationInfo.put("locationType", aMapLocation.getLocationType()); //获取当前定位结果来源，如网络定位结果，详见定位类型表
+                    locationInfo.put("altitude", aMapLocation.getAltitude()); //获取海拔高度
                     locationInfo.put("latitude", aMapLocation.getLatitude()); //获取纬度
                     locationInfo.put("longitude", aMapLocation.getLongitude()); //获取经度
                     locationInfo.put("accuracy", aMapLocation.getAccuracy()); //获取精度信息
                     locationInfo.put("speed", aMapLocation.getSpeed()); //获取速度信息
                     locationInfo.put("bearing", aMapLocation.getBearing()); //获取方向信息
                     locationInfo.put("satellites", aMapLocation.getSatellites()); //当前提供定位服务的卫星个数
+                    locationInfo.put("gpsAccuracyStatus", aMapLocation.getGpsAccuracyStatus()); //获取卫星信号强度，仅在gps定位时有效,值为 #GPS_ACCURACY_BAD，#GPS_ACCURACY_GOOD，#GPS_ACCURACY_UNKNOWN
                     locationInfo.put("date", date); //定位时间
                     locationInfo.put("address", aMapLocation.getAddress()); //地址，如果option中设置isNeedAddress为false，则没有此结果
                     locationInfo.put("country", aMapLocation.getCountry()); //国家信息
