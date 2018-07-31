@@ -2,6 +2,8 @@
 <plugin id="com.xiao.GaoDeLocation" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>XGaoDeLocation</name>
+    <preference name="ANDROID_KEY"/>
+    <preference name="IOS_KEY"/>
     <js-module name="XGaoDeLocation" src="www/XGaoDeLocation.js">
         <clobbers target="cordova.plugins.XGaoDeLocation"/>
     </js-module>
@@ -37,14 +39,14 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <!--在AndroidManifest.xml的application标签中配置Key：-->
-            <meta-data android:name="com.amap.api.v2.apikey" android:value="ca2492e54192b39c32479aca89f9834f">
+            <meta-data android:name="com.amap.api.v2.apikey" android:value="$ANDROID_KEY">
             </meta-data>
             <!--在application标签中声明service组件：-->
             <service android:name="com.amap.api.location.APSService"></service>
         </config-file>
 
         <source-file src="src/android/XGaoDeLocation.java" target-dir="src/com/xiao/GaoDeLocation/XGaoDeLocation"/>
-        <source-file src="src/android/AMap_Location.jar" target-dir="app/libs" />
+        <source-file src="src/android/AMap_Location.jar" target-dir="app/libs"/>
     </platform>
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
@@ -52,6 +54,24 @@
                 <param name="ios-package" value="XGaoDeLocation"/>
             </feature>
         </config-file>
+        <config-file target="*-Info.plist" parent="AMapAppKey">
+            <string>$IOS_KEY</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>获取位置信息</string>
+        </config-file>
+        <header-file src="src/ios/XGaoDeLocation.h"/>
         <source-file src="src/ios/XGaoDeLocation.m"/>
+
+        <framework src="src/ios/AMapFoundationKit.framework" custom="true"/>
+        <framework src="src/ios/AMapLocationKit.framework" custom="true"/>
+        <framework src="JavaScriptcore.framework"/>
+        <framework src="SystemConfiguration.framework"/>
+        <framework src="CoreTelephony.framework"/>
+        <framework src="Security.framework"/>
+        <framework src="libz.tbd"/>
+        <framework src="libc++.tbd"/>
+        <framework src="libstdc++.6.0.9.tbd"/>
     </platform>
 </plugin>
