@@ -7,3 +7,11 @@ exports.coolMethod = function (arg0, success, error) {
 exports.getCurrentPosition = function (success, error) {
     exec(success, error, 'XGaoDeLocation', 'getCurrentPosition', []);
 };
+
+exports.watchPosition = function(success, error) {
+    exec(success, error, "XGaoDeLocation", "watchPosition", []);
+};
+
+exports.clearWatch = function(success, error) {
+    exec(success, error, "XGaoDeLocation", "clearWatch", []);
+};

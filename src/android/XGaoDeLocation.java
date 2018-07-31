@@ -59,6 +59,46 @@ public class XGaoDeLocation extends CordovaPlugin  implements AMapLocationListen
             locationClient.startLocation();
             return true;
        }
+       //启动持续定位
+       if (action.equals("watchPosition")) {
+            //判断是否存在未关闭的持续定位对象
+            if (keepLocationInstance != null) {
+             keepLocationInstance.stopLocation();
+             keepLocationInstance.onDestroy();
+             keepLocationInstance = null;
+            }
+
+             locationClient = new AMapLocationClient(this.cordova.getActivity().getApplicationContext());
+             locationOption = new AMapLocationClientOption();
+             // 设置定位模式为高精度模式
+             locationOption.setLocationMode(AMapLocationMode.Hight_Accuracy);
+             // 关闭缓存机制
+             locationOption.setLocationCacheEnable(false);
+             //设置为多次定位
+             locationOption.setOnceLocation(false);
+             // 设置定位监听
+             locationClient.setLocationListener(this);
+             locationOption.setNeedAddress(true);
+             //获取定位间隔参数，缺省2秒钟定位一次
+             locationOption.setInterval(2000);
+             locationClient.setLocationOption(locationOption);
+             // 启动定位
+             locationClient.startLocation();
+             keepSendBack = true;
+             // 存储持续定位对象用于关闭
+             keepLocationInstance = locationClient;
+             return true;
+       }
+       //停止持续定位
+       if (action.equals("clearWatch")) {
+            if (keepLocationInstance != null) {
+                keepLocationInstance.stopLocation();
+                keepLocationInstance.onDestroy();
+                keepLocationInstance = null;
+            }
+            callback.success();
+            return true;
+        }
         return false;
     }
 
