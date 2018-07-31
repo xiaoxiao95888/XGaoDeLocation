@@ -1,9 +1,9 @@
 {
-  "name": "com.xiao.GaoDeLocation",
+  "name": "cordova-xiao-location-amap",
   "version": "1.0.0",
   "description": "ben xiao",
   "cordova": {
-    "id": "com.xiao.GaoDeLocation",
+    "id": "cordova-xiao-location-amap",
     "platforms": [
       "android",
       "ios"
@@ -15,5 +15,5 @@
     "cordova-ios"
   ],
   "author": "ben xiao",
-  "license": "ISC"
+  "license": "Apache 2.0"
 }
