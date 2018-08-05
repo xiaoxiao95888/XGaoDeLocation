@@ -6,7 +6,8 @@
 
 @property (retain, nonatomic) IBOutlet NSString *callback;
 
-@property (nonatomic, strong) AMapLocationManager *locationManager;
+/// @property (nonatomic, strong) AMapLocationManager *locationManager;
+@property (nonatomic, retain) AMapLocationManager *locationManager;
 
 - (void) initConfig;
 

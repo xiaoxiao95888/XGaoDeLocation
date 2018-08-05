@@ -14,7 +14,7 @@
         [AMapServices sharedServices].apiKey = appKey;
         
         //init locationManager
-        self.locationManager = [[AMapLocationManager alloc]init];
+        self.locationManager = [[AMapLocationManager alloc] init];
         self.locationManager.delegate = self;
         //set DesiredAccuracy
         [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];

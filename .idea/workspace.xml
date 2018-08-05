@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="696779c1-787b-4d8c-b022-43329ca3b88f" name="Default" comment="">
+    <list default="true" id="696779c1-787b-4d8c-b022-43329ca3b88f" name="Default" comment="发布cordova">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ios/XGaoDeLocation.h" afterPath="$PROJECT_DIR$/src/ios/XGaoDeLocation.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ios/XGaoDeLocation.m" afterPath="$PROJECT_DIR$/src/ios/XGaoDeLocation.m" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="XGaoDeLocation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/XGaoDeLocation.js">
+      <file leaf-file-name="XGaoDeLocation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/android/XGaoDeLocation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+            <state relative-caret-position="317">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XGaoDeLocation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/android/XGaoDeLocation.java">
+      <file leaf-file-name="XGaoDeLocation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/XGaoDeLocation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state relative-caret-position="368">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -41,8 +41,8 @@
       <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="38" />
+            <state relative-caret-position="322">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="n#config-file#1;n#platform#0;n#plugin#0;n#!!top" expanded="false" />
               </folding>
@@ -50,11 +50,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="XGaoDeLocation.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="XGaoDeLocation.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+            <state relative-caret-position="184">
+              <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -92,20 +102,32 @@
       <find>location</find>
       <find>interval</find>
       <find>keepSendBack</find>
+      <find>setKeepCallback</find>
+      <find>keepLocationInstance</find>
+      <find>initConfig</find>
+      <find>locationManager</find>
+      <find>AMapLocationManager</find>
+      <find>self.locationManager = [[AMapLocationManager alloc] init]</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+    <push-targets>
+      <push-target-info target-remote="XGaoDeLocation" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ios/XGaoDeLocation.h" />
-        <option value="$PROJECT_DIR$/src/ios/XGaoDeLocation.m" />
         <option value="$PROJECT_DIR$/www/XGaoDeLocation.js" />
         <option value="$PROJECT_DIR$/src/android/XGaoDeLocation.java" />
         <option value="$PROJECT_DIR$/plugin.xml" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/ios/XGaoDeLocation.m" />
+        <option value="$PROJECT_DIR$/src/ios/XGaoDeLocation.h" />
       </list>
     </option>
   </component>
@@ -116,10 +138,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="212" />
-    <option name="y" value="-10" />
-    <option name="width" value="1936" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -182,7 +204,7 @@
               <item name="XGaoDeLocation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="AMapLocationKit.framework" type="462c0819:PsiDirectoryNode" />
+              <item name="AMapFoundationKit.framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XGaoDeLocation" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +212,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
               <item name="AMapLocationKit.framework" type="462c0819:PsiDirectoryNode" />
-              <item name="Headers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="XGaoDeLocation" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +263,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532930957372</updated>
-      <workItem from="1532930958755" duration="26809000" />
+      <workItem from="1532930958755" duration="34328000" />
     </task>
     <task id="LOCAL-00001" summary="完成android的定位">
       <created>1533001957314</created>
@@ -265,11 +286,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533030730165</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="发布cordova">
+      <created>1533032999464</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533032999464</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26809000" />
+    <option name="totallyTimeSpent" value="34328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -304,21 +332,14 @@
     <MESSAGE value="完成android的定位" />
     <MESSAGE value="完成ios的定位" />
     <MESSAGE value="持续定位" />
-    <option name="LAST_COMMIT_MESSAGE" value="持续定位" />
+    <MESSAGE value="发布cordova" />
+    <option name="LAST_COMMIT_MESSAGE" value="发布cordova" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ios/AMapFoundationKit.framework/Headers/AMapUtility.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -359,32 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/XGaoDeLocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="38" />
-          <folding>
-            <element signature="n#config-file#1;n#platform#0;n#plugin#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -393,10 +388,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="n#config-file#1;n#platform#0;n#plugin#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/android/XGaoDeLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="88" column="51" lean-forward="true" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="317">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/XGaoDeLocation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/XGaoDeLocation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="66" />
           <folding />
         </state>
       </provider>
